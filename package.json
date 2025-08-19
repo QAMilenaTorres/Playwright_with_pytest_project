@@ -1,0 +1,24 @@
+{
+  "name": "python-tests-playwright",
+  "version": "1.0.0",
+  "description": "Este repositório contém testes automatizados usando **Playwright** + **Pytest**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright test --reporter=html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QAMilenaTorres/python-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QAMilenaTorres/python-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/QAMilenaTorres/python-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}
