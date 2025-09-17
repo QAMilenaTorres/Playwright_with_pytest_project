@@ -1,37 +1,32 @@
-# 🐍 Playwright + Pytest Project
+# 🐍 Python Playwright Tests
 
-Este repositório contém **testes automatizados** usando [Playwright](https://playwright.dev/python/) + [Pytest](https://docs.pytest.org/) para validação de sites.  
-Os testes cobrem desde casos simples até cenários avançados com parametrização.
+Este repositório contém **testes automatizados usando Playwright + Pytest** para validação de sites.  
+
+Ele demonstra **automação de frontend**, geração de **relatórios HTML** e pode ser integrado com **CI/CD**.
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 
-- 🐍 **Python 3.10+**
-- 🎭 **Playwright (Python)**
-- ⚡ **Pytest**
-- 📄 **Pytest-HTML** (para relatórios)
-- 📸 **Screenshots automáticos** em falhas
+- 🐍 Python 3.10+  
+- 🎭 Playwright (Python)  
+- ⚡ Pytest  
+- 📄 Pytest-HTML (para relatórios)  
 
 ---
 
 ## 🚀 Como rodar os testes localmente
 
-1️⃣ Clone o repositório:
 ```bash
+# Clone o repositório
 git clone https://github.com/QAMilenaTorres/python-playwright-tests.git
 cd python-playwright-tests
 
-📂 Estrutura do projeto
-Playwright_with_pytest_project/
-│── tests/
-│   ├── test_basic_cats.py       # Testes simples de status code
-│   ├── test_advanced_cats.py    # Testes avançados com parametrização
-│   ├── test_actions_httpcats.py # Testes de cliques e validações
-│   ├── test_google.py           # Teste de abertura do Google
-│   └── test.py                  # Teste inicial
-│── conftest.py                  # Configuração global do pytest
-│── requirements.txt             # Dependências do projeto
-│── README.md                    # Documentação do projeto
+# Instale dependências
+pip install -r requirements.txt
 
+# Instale navegadores do Playwright
+playwright install
 
+# Execute os testes
+pytest
